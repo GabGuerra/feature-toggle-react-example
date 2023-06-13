@@ -1,0 +1,110 @@
+.featureToggleEditor {
+  display: flex;
+  flex-direction: column;
+  font-family: "lato", sans-serif;
+}
+
+.featureToggleRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.featureToggleHeading {
+  margin-right: 1rem;
+  min-width: 120px;
+  text-align: left;
+}
+
+.featureToggleSwitch {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: grey;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: green;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px green;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+.featureToggleSwitch label {
+  display: flex;
+  align-items: center;
+}
+
+.featureToggleSwitch span {
+  padding-left: 5px;
+}
+
+.featureToggleInput {
+  border-radius: 4px;
+  font-size: 1.1em;
+  padding: 0.4em;
+}
+
+
+.addButton {
+  height: 2.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #0d5f29;
+  color: white;
+  border-radius: 0.25rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.errorMessage  {
+  color: red !important;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
