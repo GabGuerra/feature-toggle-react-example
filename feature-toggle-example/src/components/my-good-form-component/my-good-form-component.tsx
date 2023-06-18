@@ -21,11 +21,11 @@ export default function MyGoodFormComponent(props: Props) {
     /* in a real application the ideal would be to have only one call and
      return something like this
      { 
-      "red_front_color": true,
+      "red_font_color": true,
       "add_phone_on_form": false
      }
     */
-    setIsRedFontEnabled(featureToggle.isEnabled("red_front_color", props.env));
+    setIsRedFontEnabled(featureToggle.isEnabled("red_font_color", props.env));
     setIsPhoneOnFormEnabled(featureToggle.isEnabled("add_phone_on_form", props.env));
   
   }, [featureToggle]);
@@ -45,7 +45,7 @@ export default function MyGoodFormComponent(props: Props) {
 
       <ul>
         <li>
-          <span className={styles.featureName}>red_front_color</span> is{" "}
+          <span className={styles.featureName}>red_font_color</span> is{" "}
           {isRedFontEnabled ? "enabled" : "disabled"}
         </li>
         <br></br>
