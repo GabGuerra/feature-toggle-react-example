@@ -5,12 +5,12 @@ body {
 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: 100vh;
 }
 
-.leftSection {
-  width: 33%;
+.topSection {
+  flex: 1;
   background-color: #f1f1f1;
   display: flex;
   justify-content: center;
@@ -18,14 +18,14 @@ body {
 }
 
 .middleSection {
-  width: 33%;
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.rightSection {
-  width: 33%;
+.bottomSection {
+  flex: 1;
   display: flex;
   background-color: #f1f1f1;
   justify-content: center;

@@ -7,7 +7,7 @@ function App() {
  // multiple environments in the same page
   return (
     <div className={style.container}>
-      <div className={style.leftSection}>
+      <div className={style.topSection}>
         <MyGoodFormComponent
           env="dev"
         />
@@ -17,7 +17,7 @@ function App() {
           env="prod"
         />
       </div>
-      <div className={style.rightSection}>
+      <div className={style.bottomSection}>
         <FeatureToggleEditor />
       </div>
     </div>
