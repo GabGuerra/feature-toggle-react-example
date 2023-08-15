@@ -42,19 +42,6 @@ export default function MyGoodFormComponent(props: Props) {
         </span>{" "}
         Environment
       </h1>
-
-      {/* <ul>
-        <li>
-          <span className={styles.featureName}>red_font_color</span> is{" "}
-          {isRedFontEnabled ? "enabled" : "disabled"}
-        </li>
-        <br></br>
-        <li>
-          <span className={styles.featureName}>add_phone_on_form</span> is{" "}
-          {isPhoneOnFormEnabled ? "enabled" : "disabled"}
-        </li>
-      </ul> */}
-
       <form className={styles.myForm} onSubmit={handleSubmit}>
         <div>
           <label>Name:</label>
